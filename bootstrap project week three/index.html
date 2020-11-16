@@ -17,9 +17,9 @@
             </ul>
         </nav>
 
-        <div class="container-fluid">
+        <div class="container-fluid p-3">
             <div class="row service-area">
-                <div class="service-list-div col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="service-list-div col-xl-6 col-lg-6">
                     <h1>We connect University students with their most important needs.</h1>
                     <ul class="gb-servicelist">
                         <li>Lecture notes and handouts from all Nigerian Universities</li>
@@ -31,16 +31,16 @@
                         <button type="button" class="btn btn-info">Start Here</button>
                     </ul>
                 </div>
-                <div class="service-img-div col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                   <img class="hero-img" src="./images/hero_image.png" alt="Hero Image">
+                <div class="service-img-div col-xl-6 col-lg-6 ">
+                   <img class="hero-img" src="./images/hero_image.png" alt="Hero Image">  <!------use media to display this to none for smaller screen-->
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid card-section">
+        <div class="container-fluid card-section p-3">
             <h4>Be more productive while in school...</h4>
-            <div class="row">
-                <div class="col-sm-6">
+            <div class="row mb-4 px-3">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12 mb-4"><!------------always include all break points-->
                   <div class="card">
                     <div class="card-body">
                       <img src="./images/books.png" alt="">
@@ -49,7 +49,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12 mb-3">
                   <div class="card">
                     <div class="card-body">
                       <img src="./images/calendar.png" alt="">
@@ -58,7 +58,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6">
+            </div>
+                <div class="row px-3"><!--------------for each new column always add ur row be adding the col-->
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12 mb-4">
                     <div class="card">
                       <div class="card-body">
                         <img src="./images/network.png" alt="">
@@ -67,7 +69,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12 mb-4">
                     <div class="card">
                       <div class="card-body">
                         <img src="./images/money-bag.png" alt="">
@@ -76,39 +78,40 @@
                       </div>
                     </div>
                 </div>
+                </div>
             </div>
-        </div>
+        
 
         <div class="container-fluid numerics-area">
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a id="num-fig1" href=""><h4>41</h4></a>
-                    <a class="num-txts" href="lecturenotes.html"><p>Lecture Notes</p></a>
+            <div class="row py-4 my-4">   <!--added bootsrap margin and botton top and botton class-->
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12"> <!----------worked on the break points------------->
+                    <h3 class="text-center"><a id="num-fig1" class="text-decoration-none" href="">31</a></h3> <!--------add bootstrap text center class rearrange the anchor and paragraph setting--------->
+                    <p class="text-center"><a class="num-txts"class="text-decoration-none"  href="lecturenotes.html"> Notes</a></p><!---add text-decoration none bootstrap class-->
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a id="num-fig2" href=""><h4>279</h4></a>
-                    <a class="num-txts" href=""><p>Lecture Topics</p></a>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <h3 class="text-center"><a id="num-fig2" class="text-decoration-none" class="text-decoration-none" href="">279</a></h3>
+                    <p class="text-center"><a class="num-txts" href="">Lecture Topics</a</p>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a id="num-fig3" href=""><h4>277</h4></a>
-                    <a class="num-txts" href="past questions.html"><p>Question Papers</p></a>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <h3 class="text-center"><a id="num-fig3" class="text-decoration-none" href="">277</a></h3>
+                    <p class="text-center"><a class="num-txts" class="text-decoration-none" href="past questions.html">Question Papers</a></p>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a id="num-fig4"  href=""><h4>214</h4></a>
-                    <a class="num-txts" href="projects.html"><p>Project Materials</p></a>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <h3 class="text-center "><a id="num-fig4"  class="text-decoration-none" href="">214</a></h3>
+                    <p class="text-center"><a class="num-txts" class="text-decoration-none" href="projects.html">Project Materials</a></p>
                 </div>
             </div>
         </div>
 
         <div class="container-fluid collection-box" style="background-color: #e4f9f5; padding-top: 80px;">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="row collection"> <!------add a colection class to enable me display it as block using media query-->
+                <div class="col">
                     <img src="./images/collection_box.png" class="collection-img" alt="">
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="col">
                     <h4 class="collection-hdr">Improve your school life, make money by uploading project materials</h4>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="col">
                     <button type="button" class="btn btn-info collection-btn">Start Uploading</button>
                 </div>
             </div>
